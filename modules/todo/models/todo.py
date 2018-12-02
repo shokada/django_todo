@@ -13,3 +13,10 @@ class Todo(models.Model):
     @classmethod
     def get_list_all(cls):
         return list(cls.objects.all())
+
+    @classmethod
+    def get_by_id(cls, id):
+        try:
+            return cls.objects.get(id=id)
+        except cls.DoesNotExist:
+            return None
