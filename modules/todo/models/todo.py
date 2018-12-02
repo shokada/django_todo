@@ -20,3 +20,7 @@ class Todo(models.Model):
             return cls.objects.get(id=id)
         except cls.DoesNotExist:
             return None
+
+    @classmethod
+    def get_done_todo_list(cls):
+        return cls.objects.filter(is_done=True)

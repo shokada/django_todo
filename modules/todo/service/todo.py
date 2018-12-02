@@ -11,3 +11,7 @@ def get_all():
 
 def get_by_id(id):
     return Todo.get_by_id(id)
+
+
+def get_done_todo_list():
+    return Todo.get_done_todo_list
