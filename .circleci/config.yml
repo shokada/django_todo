@@ -18,4 +18,5 @@ jobs:
           paths:
             - ~/.local
             - ~/.cache
-      - run: pipenv run ./manage.py test
+      - run: pipenv run coverage run --source='.' ./manage.py test
+      - run: pipenv run codecov
