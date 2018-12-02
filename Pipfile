@@ -8,6 +8,8 @@ factory-boy = "*"
 pylint = "*"
 autopep8 = "*"
 flake8 = "*"
+coverage = "*"
+codecov = "*"
 
 [packages]
 django = "*"
