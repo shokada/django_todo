@@ -1,0 +1,10 @@
+version: 2.1
+jobs:
+  test:
+    docker:
+      - image: python:3.7.1
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: pipenv install
+      - run: pipenv run ./manage.py test
