@@ -9,5 +9,5 @@ def get_all():
     return Todo.get_list_all()
 
 
-def get_by_id(self, id):
+def get_by_id(id):
     return Todo.get_by_id(id)
