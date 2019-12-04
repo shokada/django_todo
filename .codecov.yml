@@ -2,7 +2,9 @@ coverage:
   status:
       project:
         default:
+	  enabled: no
 	  if_ci_failed: success
       patch:
         default:
+          enabled: no
           if_ci_failed: success
