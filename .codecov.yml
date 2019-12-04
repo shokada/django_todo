@@ -5,6 +5,6 @@ coverage:
 	  enabled: no
 	  if_ci_failed: success
       patch:
-        default:
+        defaulttt:
           enabled: no
           if_ci_failed: success
