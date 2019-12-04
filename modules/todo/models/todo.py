@@ -20,3 +20,13 @@ class Todo(models.Model):
             return cls.objects.get(id=id)
         except cls.DoesNotExist:
             return None
+
+
+    def test():
+        return 1 + 11
+
+    def test1():
+        return 2 + 2
+
+    def test2():
+        return 3 + 3
