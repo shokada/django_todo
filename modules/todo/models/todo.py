@@ -35,4 +35,4 @@ class Todo(models.Model):
         return 3 + 3
 
     def test4():
-        return 3 + 3
+        return 3 + 4
