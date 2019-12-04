@@ -2,9 +2,7 @@ coverage:
   status:
       project:
         default:
-	  enabled: no
-	  if_ci_failed: success
+          target: 10%
       patch:
-        defaulttt:
-          enabled: no
-          if_ci_failed: success
+        default:
+          target: 10%
