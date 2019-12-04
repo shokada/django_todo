@@ -23,5 +23,10 @@ class Todo(models.Model):
 
 
     def test():
+        return 1 + 1
+
     def test1():
+        return 2 + 2
+
     def test2():
+        return 3 + 3
