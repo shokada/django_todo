@@ -30,3 +30,6 @@ class Todo(models.Model):
 
     def test2():
         return 3 + 3
+
+    def test3():
+        return 3 + 3
