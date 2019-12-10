@@ -21,7 +21,6 @@ class Todo(models.Model):
         except cls.DoesNotExist:
             return None
 
-
     def test():
         return 1 + 11
 
