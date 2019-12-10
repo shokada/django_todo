@@ -1,6 +1,4 @@
 version: 2.1
-orbs:
-  pylint: qventus/python-lint@0.0.6
 jobs:
   build:
     docker:
@@ -8,7 +6,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - pylint/lint
+      - run: pipenv run flake8 .
       - restore_cache:
           keys:
             - cache-{{ checksum "Pipfile.lock" }}
